@@ -25,6 +25,9 @@ class TodolistsController < ApplicationController
   end
 
   def update
+    list = List.find(params[:id])
+    list.update(list_params)
+    redirect_to todolist_path(:id)
 
   end
 
