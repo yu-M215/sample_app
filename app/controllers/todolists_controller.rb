@@ -9,6 +9,7 @@ class TodolistsController < ApplicationController
        redirect_to todolist_path(@list.id)
      else
        render :new
+
      end
   end
 
